@@ -1,0 +1,22 @@
+{
+  "name": "tribu",
+  "version": "1.0.0",
+  "description": "Group based social network",
+  "main": "server.js",
+  "scripts": {
+    "client": "npm start --prefix client"
+  },
+  "author": "Arnaud Chapeleur",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
