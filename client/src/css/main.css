@@ -15,6 +15,22 @@
       #navbar .nav-item .nav-link:hover {
         opacity: 0.8; }
 
+#landing-header {
+  min-height: 100vh;
+  max-height: 1000px;
+  display: flex;
+  align-items: center; }
+  #landing-header .container {
+    padding-top: 12vh;
+    padding-bottom: 40px; }
+    #landing-header .container h1 {
+      font-weight: 400;
+      margin-bottom: 30px; }
+    #landing-header .container p {
+      font-weight: 300;
+      font-size: 14px; }
+
 body {
   background-color: #171941 !important;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  color: #fff; }

@@ -1,3 +1,8 @@
+// Colors
+$primary: #1d8cf8;
+$background: #171941;
+
+// Mixins
 @mixin ease {
   transition: all 0.3s ease 0s;
 }

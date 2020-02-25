@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
 @import './config';
 @import './layout/navbar.scss';
+@import './layout/landing.scss';
 
 body {
-  background-color: #171941 !important;
+  background-color: $background !important;
   font-family: 'Poppins', sans-serif;
+  color: #fff;
 }
