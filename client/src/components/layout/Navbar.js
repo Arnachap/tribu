@@ -3,37 +3,39 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
-      <Link to='/' class='navbar-brand'>
-        Tribu
-      </Link>
+    <nav id='navbar' className='navbar navbar-expand-lg navbar-dark'>
+      <div className='container'>
+        <Link to='/' className='navbar-brand'>
+          Tribu
+        </Link>
 
-      <button
-        class='navbar-toggler'
-        type='button'
-        data-toggle='collapse'
-        data-target='#navbarNav'
-        aria-controls='navbarNav'
-        aria-expanded='false'
-        aria-label='Toggle navigation'
-      >
-        <span class='navbar-toggler-icon'></span>
-      </button>
+        <button
+          className='navbar-toggler'
+          type='button'
+          data-toggle='collapse'
+          data-target='#navbarNav'
+          aria-controls='navbarNav'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <span className='navbar-toggler-icon'></span>
+        </button>
 
-      <div class='collapse navbar-collapse' id='navbarNav'>
-        <ul class='navbar-nav ml-auto'>
-          <li class='nav-item'>
-            <Link to='/login' class='nav-link'>
-              Connexion
-            </Link>
-          </li>
+        <div className='collapse navbar-collapse' id='navbarNav'>
+          <ul className='navbar-nav ml-auto'>
+            <li className='nav-item'>
+              <Link to='/login' className='nav-link'>
+                Connexion
+              </Link>
+            </li>
 
-          <li class='nav-item'>
-            <Link to='/register' class='nav-link'>
-              Inscription
-            </Link>
-          </li>
-        </ul>
+            <li className='nav-item'>
+              <Link to='/register' className='nav-link'>
+                Inscription
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

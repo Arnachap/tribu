@@ -1,0 +1,24 @@
+#navbar {
+  background-color: transparent;
+  padding: 25px 15px 15px;
+
+  .navbar-brand {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .nav-item {
+    padding: 0 10px;
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 300;
+      color: #fff;
+      @include ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
