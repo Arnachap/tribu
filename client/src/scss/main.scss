@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
 @import './config';
-@import './layout/navbar.scss';
-@import './layout/landing.scss';
+@import './components/buttons';
+@import './layout/navbar';
+@import './layout/landing';
 
 body {
   background-color: $background !important;

@@ -1,0 +1,37 @@
+.btn {
+  border: none;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  overflow: hidden;
+  margin: 4px 1px;
+  padding: 11px 40px;
+  border-radius: 6px;
+  line-height: 19px;
+  font-size: 14px;
+  color: #fff;
+  @include ease-slow;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.btn-primary {
+  background: $primary;
+  background-image: linear-gradient(
+    to bottom left,
+    $primary,
+    #3358f4,
+    $primary
+  );
+  background-size: 210% 210%;
+  background-position: 100% 0;
+}
+
+.btn-secondary {
+  background: #00b290;
+  background-image: linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3);
+  background-size: 210% 210%;
+  background-position: 100% 0;
+}

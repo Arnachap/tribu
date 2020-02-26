@@ -1,4 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap");
+.btn {
+  border: none;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  overflow: hidden;
+  margin: 4px 1px;
+  padding: 11px 40px;
+  border-radius: 6px;
+  line-height: 19px;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.15s ease 0s; }
+  .btn:hover {
+    transform: translateY(-1px); }
+
+.btn-primary {
+  background: #1d8cf8;
+  background-image: linear-gradient(to bottom left, #1d8cf8, #3358f4, #1d8cf8);
+  background-size: 210% 210%;
+  background-position: 100% 0; }
+
+.btn-secondary {
+  background: #00b290;
+  background-image: linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3);
+  background-size: 210% 210%;
+  background-position: 100% 0; }
+
 #navbar {
   background-color: transparent;
   padding: 25px 15px 15px; }
@@ -28,7 +56,8 @@
       margin-bottom: 30px; }
     #landing-header .container p {
       font-weight: 300;
-      font-size: 14px; }
+      font-size: 14px;
+      margin-bottom: 30px; }
 
 body {
   background-color: #171941 !important;

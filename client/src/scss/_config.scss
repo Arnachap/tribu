@@ -6,3 +6,7 @@ $background: #171941;
 @mixin ease {
   transition: all 0.3s ease 0s;
 }
+
+@mixin ease-slow {
+  transition: all 0.15s ease 0s;
+}
