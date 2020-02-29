@@ -2,7 +2,7 @@
   border: none;
   position: relative;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 400;
   overflow: hidden;
   margin: 4px 1px;
   padding: 11px 40px;
@@ -12,8 +12,22 @@
   color: #fff;
   @include ease-slow;
 
+  &:focus,
+  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
   &:hover {
     transform: translateY(-1px);
+  }
+
+  &.btn-lg {
+    padding: 15px 48px;
+  }
+
+  &.btn-round {
+    border-radius: 30px;
   }
 }
 

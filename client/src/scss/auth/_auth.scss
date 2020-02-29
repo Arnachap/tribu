@@ -1,0 +1,11 @@
+#auth {
+  min-height: 100vh;
+  max-height: 999px;
+  display: flex;
+  align-items: center;
+
+  .container {
+    padding-top: 12vh;
+    padding-bottom: 40px;
+  }
+}

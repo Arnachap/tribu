@@ -1,28 +1,102 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Navbar from '../layout/Navbar';
+import Particles from 'react-particles-js';
 
 const Login = () => {
+  const particlesParams = {
+    particles: {
+      opacity: {
+        random: true,
+        anim: {
+          enable: false
+        }
+      },
+      size: {
+        value: 2
+      },
+      move: {
+        speed: 1
+      },
+      line_linked: {
+        enable: false
+      }
+    }
+  };
+
+  const [focus, setFocus] = useState('');
+
+  const onFocus = e => {
+    setFocus(e.target.name);
+  };
+
   return (
     <Fragment>
+      <Particles style={{ position: 'absolute' }} params={particlesParams} />
+
       <Navbar />
 
-      <div className='container'>
-        <div className='row'>
-          <div className='col-6 m-auto'>
-            <form>
-              <div className='form-group'>
-                <label>Adresse Email</label>
+      <div id='auth'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-8 col-lg-5 mx-auto'>
+              <div className='card'>
+                <div className='card-header'>
+                  <h4 className='card-title'>Connexion</h4>
+                </div>
 
-                <input type='email' className='form-control' />
+                <form className='form'>
+                  <div className='card-body'>
+                    <div
+                      className={
+                        'input-group ' + (focus === 'email' ? 'focus' : '')
+                      }
+                    >
+                      <div className='input-group-prepend'>
+                        <span className='input-group-icon'>
+                          <i className='material-icons-outlined'>email</i>
+                        </span>
+                      </div>
+
+                      <input
+                        type='email'
+                        className='form-control'
+                        placeholder='Email'
+                        name='email'
+                        onFocus={onFocus}
+                        onBlur={() => setFocus('')}
+                      />
+                    </div>
+
+                    <div
+                      className={
+                        'input-group ' + (focus === 'password' ? 'focus' : '')
+                      }
+                    >
+                      <div className='input-group-prepend'>
+                        <div className='input-group-icon'>
+                          <i className='material-icons-outlined'>lock_open</i>
+                        </div>
+                      </div>
+
+                      <input
+                        type='password'
+                        className='form-control'
+                        placeholder='Mot de passe'
+                        name='password'
+                        onFocus={onFocus}
+                        onBlur={() => setFocus('')}
+                      />
+                    </div>
+                  </div>
+
+                  <div className='card-footer'>
+                    <button className='btn btn-primary btn-lg btn-round d-block mx-auto'>
+                      Connexion
+                    </button>
+                  </div>
+                </form>
               </div>
-
-              <div className='form-group'>
-                <label>Mot de passe</label>
-                <input type='password' className='form-control' />
-              </div>
-
-              <button className='btn btn-primary'>Connexion</button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
