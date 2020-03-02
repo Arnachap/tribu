@@ -5,10 +5,19 @@
 @import './components/forms';
 @import './layout/navbar';
 @import './layout/landing';
+@import './layout/sidebar';
+@import './layout/main-panel';
 @import './auth/auth';
 
 body {
   background-color: $background !important;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+}
+
+#wrapper {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
 }
