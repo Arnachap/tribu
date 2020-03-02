@@ -1,8 +1,13 @@
 // Colors
 $primary: #1d8cf8;
+$secondary: #00bf9a;
 $background: #171941;
 $card-background: #1f2251;
 $border-color: #2b3553;
+
+// Gradient
+$primary-gradient: linear-gradient(to bottom left, $primary, #3358f4, $primary);
+$secondary-gradient: linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3);
 
 // Mixins
 @mixin ease {

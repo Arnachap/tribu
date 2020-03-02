@@ -33,19 +33,14 @@
 
 .btn-primary {
   background: $primary;
-  background-image: linear-gradient(
-    to bottom left,
-    $primary,
-    #3358f4,
-    $primary
-  );
+  background-image: $primary-gradient;
   background-size: 210% 210%;
   background-position: 100% 0;
 }
 
 .btn-secondary {
   background: #00b290;
-  background-image: linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3);
+  background-image: $secondary-gradient;
   background-size: 210% 210%;
   background-position: 100% 0;
 }

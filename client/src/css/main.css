@@ -40,10 +40,16 @@
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 7px;
   margin-top: 30px; }
+  .card.blue .card-header {
+    background-color: #1d8cf8; }
+  .card.green .card-header {
+    background-color: #00bf9a; }
   .card .card-header {
     border: 0;
-    background-color: #1d8cf8;
-    margin-bottom: 20px; }
+    padding: 15px;
+    margin: -30px 15px 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1); }
     .card .card-header h4 {
       margin: 5px 0;
       font-weight: 600;
@@ -53,7 +59,7 @@
     padding: 15px; }
   .card .card-footer {
     border: 0;
-    margin: 15px 0 10px;
+    margin-bottom: 10px;
     padding: 15px;
     background-color: #1f2251; }
 

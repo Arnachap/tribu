@@ -19,7 +19,7 @@ const Login = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-8 col-lg-5 mx-auto'>
-              <div className='card'>
+              <div className='card blue'>
                 <div className='card-header'>
                   <h4 className='card-title'>Connexion</h4>
                 </div>
