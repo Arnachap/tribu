@@ -1,9 +1,12 @@
 import React, { Fragment } from 'react';
 import Navbar from '../layout/Navbar';
+import Background from '../layout/Background';
 
 const Register = () => {
   return (
     <Fragment>
+      <Background />
+
       <Navbar />
 
       <div className='container'>

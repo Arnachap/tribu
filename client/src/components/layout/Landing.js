@@ -1,32 +1,12 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../layout/Navbar';
-import Particles from 'react-particles-js';
+import Background from '../layout/Background';
 
 const Landing = () => {
-  const particlesParams = {
-    particles: {
-      opacity: {
-        random: true,
-        anim: {
-          enable: false
-        }
-      },
-      size: {
-        value: 2
-      },
-      move: {
-        speed: 1
-      },
-      line_linked: {
-        enable: false
-      }
-    }
-  };
-
   return (
     <Fragment>
-      <Particles style={{ position: 'absolute' }} params={particlesParams} />
+      <Background />
 
       <Navbar />
 

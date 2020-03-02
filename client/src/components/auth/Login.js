@@ -1,28 +1,8 @@
 import React, { Fragment, useState } from 'react';
 import Navbar from '../layout/Navbar';
-import Particles from 'react-particles-js';
+import Background from '../layout/Background';
 
 const Login = () => {
-  const particlesParams = {
-    particles: {
-      opacity: {
-        random: true,
-        anim: {
-          enable: false
-        }
-      },
-      size: {
-        value: 2
-      },
-      move: {
-        speed: 1
-      },
-      line_linked: {
-        enable: false
-      }
-    }
-  };
-
   const [focus, setFocus] = useState('');
 
   const onFocus = e => {
@@ -31,7 +11,7 @@ const Login = () => {
 
   return (
     <Fragment>
-      <Particles style={{ position: 'absolute' }} params={particlesParams} />
+      <Background />
 
       <Navbar />
 
